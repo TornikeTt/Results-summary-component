@@ -1,0 +1,273 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 125vh;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+@media (min-width: 376px) {
+  body {
+    width: 100%;
+    height: 100vh;
+    font-family: "Hanken Grotesk", sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  main {
+    width: 650px;
+    height: 400px;
+    display: flex;
+  }
+  .Result_Side {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .Result_Side .result {
+    font-size: 17px;
+    color: hsl(241, 100%, 89%);
+    font-weight: bold;
+  }
+  .Result_Side .circle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: hsla(256, 72%, 46%, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Result_Side .circle .score-result {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+  }
+  .Result_Side .circle .score-result-Of {
+    font-size: 14px;
+    color: hsl(224, 30%, 27%);
+  }
+  .Result_Side .about_your_score {
+    width: 60%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .Result_Side .about_your_score p:nth-child(1) {
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+  }
+  .Result_Side .about_your_score p:nth-child(2) {
+    font-size: 14px;
+    color: hsl(241, 100%, 89%);
+    text-align: center;
+  }
+  .summary {
+    width: 100%;
+    margin-top: 40px;
+    height: calc(100% - 40px);
+  }
+  .summary .summaryTitle {
+    margin: 0 auto;
+    width: 87%;
+  }
+  .summary .summaryTitle h1 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .summary .about_your_result {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .summary .about_your_result .container_forEach_result {
+    width: 87%;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 0px 15px;
+  }
+  .summary .about_your_result .container_forEach_result .iconSide {
+    display: flex;
+  }
+  .summary .about_your_result .container_forEach_result .iconSide p {
+    font-weight: bold;
+    margin-left: 10px;
+    color: hsl(0, 100%, 67%);
+  }
+  .summary .about_your_result .container_forEach_result .ratioSide {
+    display: flex;
+  }
+  .summary .about_your_result .container_forEach_result .ratioSide p {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  .summary .about_your_result .container_forEach_result .ratioSide p:nth-child(3) {
+    color: rgb(48, 59, 90);
+  }
+  .summary .Continue_button {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .summary .Continue_button button {
+    cursor: pointer;
+    width: 87%;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: hsl(224, 30%, 27%);
+  }
+}
+@media (max-width: 375px) {
+  main {
+    width: 375px;
+    height: 100%;
+  }
+  .Result_Side {
+    width: 100%;
+    height: 45%;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .Result_Side .result {
+    font-size: 17px;
+    color: hsl(241, 100%, 89%);
+    font-weight: bold;
+  }
+  .Result_Side .circle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: hsla(256, 72%, 46%, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Result_Side .circle .score-result {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+  }
+  .Result_Side .circle .score-result-Of {
+    font-size: 14px;
+    color: hsl(224, 30%, 27%);
+  }
+  .Result_Side .about_your_score {
+    width: 60%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .Result_Side .about_your_score p:nth-child(1) {
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+  }
+  .Result_Side .about_your_score p:nth-child(2) {
+    font-size: 14px;
+    color: hsl(241, 100%, 89%);
+    text-align: center;
+  }
+  .summary {
+    width: 100%;
+    height: calc(55% - 20px);
+    margin-top: 20px;
+  }
+  .summary .summaryTitle {
+    margin: 0 auto;
+    width: 87%;
+  }
+  .summary .summaryTitle h1 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .summary .about_your_result {
+    width: 100%;
+    height: 68%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .summary .about_your_result .container_forEach_result {
+    width: 87%;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 0px 15px;
+    background-color: hsla(0, 80%, 86%, 0.1);
+  }
+  .summary .about_your_result .container_forEach_result .iconSide {
+    display: flex;
+  }
+  .summary .about_your_result .container_forEach_result .iconSide p {
+    font-weight: bold;
+    margin-left: 10px;
+    color: hsl(0, 100%, 67%);
+  }
+  .summary .about_your_result .container_forEach_result .ratioSide {
+    display: flex;
+  }
+  .summary .about_your_result .container_forEach_result .ratioSide p {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  .summary .about_your_result .container_forEach_result .ratioSide p:nth-child(3) {
+    color: rgb(48, 59, 90);
+  }
+  .summary .Continue_button {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .summary .Continue_button button {
+    width: 87%;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: hsl(224, 30%, 27%);
+  }
+}/*# sourceMappingURL=style.css.map */
